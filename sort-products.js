@@ -1,6 +1,4 @@
-const sortProducts = arr => {
-    return arr.sort((a, b) => a.price - b.price)
-};
+const sortProducts = arr => arr.sort((a, b) => a.price - b.price)
 
 const products = [
     {
