@@ -2,4 +2,5 @@
 These are exercises related to JS fundamental studies
 
 ## Projects included
-- Counting Zeros
+- Counting zeros in number
+- Greatest common divisor
