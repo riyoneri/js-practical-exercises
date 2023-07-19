@@ -5,3 +5,5 @@ const counter = (num) => {
   }
   return counter
 };
+
+console.log(counter(1000))
