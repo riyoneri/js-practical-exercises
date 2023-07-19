@@ -12,3 +12,4 @@ These are exercises related to JS fundamental studies
 8. Phone number validator
 9. Sort products
 10. String compression
+11. String addition
