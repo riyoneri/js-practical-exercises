@@ -9,3 +9,4 @@ These are exercises related to JS fundamental studies
 - Add numbers
 - Array statistics
 - Odd squares
+- Phone number validator
