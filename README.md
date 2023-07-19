@@ -2,11 +2,11 @@
 These are exercises related to JS fundamental studies
 
 ## Projects included
-- Counting zeros in number
-- Greatest common divisor
-- Remove array duplicates
-- Reverse in place
-- Add numbers
-- Array statistics
-- Odd squares
-- Phone number validator
+1. Counting zeros in number
+2. Greatest common divisor
+3. Remove array duplicates
+4. Reverse in place
+5. Add numbers
+6. Array statistics
+7. Odd squares
+8. Phone number validator
