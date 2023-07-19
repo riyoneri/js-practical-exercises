@@ -5,3 +5,5 @@ These are exercises related to JS fundamental studies
 - Counting zeros in number
 - Greatest common divisor
 - Remove array duplicates
+- Add numbers
+- Array statistics
