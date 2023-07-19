@@ -13,3 +13,4 @@ These are exercises related to JS fundamental studies
 9. Sort products
 10. String compression
 11. String addition
+12. Nullable conversion
