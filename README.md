@@ -10,3 +10,4 @@ These are exercises related to JS fundamental studies
 6. Array statistics
 7. Odd squares
 8. Phone number validator
+9. Sort products
