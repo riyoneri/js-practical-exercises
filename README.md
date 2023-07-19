@@ -14,3 +14,8 @@ These are exercises related to JS fundamental studies
 10. String compression
 11. String addition
 12. Nullable conversion
+13. JavaScript Array Methods Implementation
+14. Counter
+15. Prototype
+16. Call, Bind, Apply
+17. Object key transformation
