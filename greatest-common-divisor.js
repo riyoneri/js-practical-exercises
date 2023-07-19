@@ -9,3 +9,5 @@ const gcd = (a, b) => {
 
   return a;
 };
+
+console.log(gcd(20, 30))
