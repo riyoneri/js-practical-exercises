@@ -8,3 +8,4 @@ These are exercises related to JS fundamental studies
 - Reverse in place
 - Add numbers
 - Array statistics
+- Odd squares
