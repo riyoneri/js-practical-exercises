@@ -15,7 +15,8 @@ const compressString = (str) => {
     i == str.length - 1 && (newStr += `${char}${counter}`);
   }
 
-  console.log(newStr);
+  return newStr
 };
 
-compressString("XYZ");
+console.log(compressString("AAAABBBCCDAA"));
+console.log(compressString("XYZ"));
