@@ -11,3 +11,4 @@ These are exercises related to JS fundamental studies
 7. Odd squares
 8. Phone number validator
 9. Sort products
+10. String compression
