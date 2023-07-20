@@ -3,7 +3,6 @@ const convertNullableValues = (obj) => {
     if (obj[prop] === null) obj[prop] = 0;
     if (obj[prop] === undefined) obj[prop] = "";
   }
-
   return obj;
 };
 
