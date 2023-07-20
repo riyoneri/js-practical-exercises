@@ -31,4 +31,4 @@ Array.prototype.myForEach = function (callbackFn) {
 
 const arr = [1, 2, 4, 5];
 
-console.log(arr.myForEach((item, index, arr) => console.log(item)));
+// console.log(arr.myForEach((item, index, arr) => console.log(item)));
