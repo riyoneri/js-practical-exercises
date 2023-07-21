@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/lib/fontawesome.min.css">
+    <title>Todo App</title>
+</head>
+
+<body class="container grid bg-[#002339]">
+    <div class="w-1/2 mt-10 space-y-10 mx-auto">
+        <p class="text-3xl text-center font-bold py-5 bg-white rounded-md">Todo App</p>
+        <form onsubmit="addTask" action="#" class="bg-white py-3 px-5 rounded-md">
+            <p class="text-xl">Add your task</p>
+            <div class="flex items-center gap-5 mt-5">
+                <input type="text" placeholder="Enter text here" class="flex-1 border-b border-neutral-400 p-1">
+                <button type="submit" class="bg-red-500 px-10 py-1 rounded-sm text-white">Add</button>
+            </div>
+        </form>
+        <div class="bg-white py-3 px-5 rounded-md">
+            <p class="text-center font-semibold">Your Todo Lists</p>
+            <ul class="mt-5 space-y-2" id="todoList">
+                <li class="flex items-center bg-neutral-200 py-1 px-2">
+                    <span class="flex-1 text-sm">Waking up</span>
+                    <div class="flex items-center gap-5">
+                        <input type="checkbox" id="">
+                        <span class="text-red-400 hover:text-red-700">
+                            <i class="fa fas fa-circle-xmark"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../assets/lib/fontawesome.min.js"></script>
+</body>
+
+</html>
