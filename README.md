@@ -1,0 +1,1 @@
+These are javascript exercises which comprises Fundamentals and DOM.
