@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Dynamic List Background Color</title>
 </head>
+
 <body class="h-screen bg-neutral-800 flex px-5 items-center justify-center">
 
-    <ul class="w-1/2 text-sm">
-        <li class="py-10 flex justify-around bg-white border-b border-neutral-800">
-            <input type="text" class="bg-neutral-200 rounded-full text-center py-1">
+    <ul class="w-full sm:w-1/2 text-sm bg-white rounded-md">
+        <li class="py-10 sm:flex-row gap-5 sm:gap-0 flex-col px-5 sm:px-0 flex justify-around transition-colors duration-500 border-b border-neutral-800">
+            <input type="text" placeholder="Enter color" class="bg-neutral-100 rounded-full text-center py-1">
             <button id="btn" class="rounded-full bg-black px-5 text-white">Check</button>
         </li>
+        <li class="py-10 sm:flex-row gap-5 sm:gap-0 flex-col px-5 sm:px-0 flex justify-around transition-colors duration-500 border-b border-neutral-800">
+            <input type="text" placeholder="Enter color" class="bg-neutral-100 rounded-full text-center py-1">
+            <button id="btn" class="rounded-full bg-black px-5 text-white">Check</button>
+        </li>
+        <li class="py-10 sm:flex-row gap-5 sm:gap-0 flex-col px-5 sm:px-0 flex justify-around transition-colors duration-500 border-b border-neutral-800">
+            <input type="text" placeholder="Enter color" class="bg-neutral-100 rounded-full text-center py-1">
+            <button id="btn" class="rounded-full bg-black px-5 text-white">Check</button>
+        </li>
+        <li class="py-10 sm:flex-row gap-5 sm:gap-0 flex-col px-5 sm:px-0 flex justify-around transition-colors duration-500 border-b border-neutral-800">
+            <input type="text" placeholder="Enter color" class="bg-neutral-100 rounded-full text-center py-1">
+            <button id="btn" class="rounded-full bg-black px-5 text-white">Check</button>
+        </li>
+        
     </ul>
 
     <script src="script.js"></script>
 </body>
+
 </html>
