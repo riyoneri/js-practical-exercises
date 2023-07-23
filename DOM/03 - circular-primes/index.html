@@ -10,7 +10,10 @@
 
 <body class="flex h-screen flex-col justify-center bg-[#231F20]">
     <div class="p-5 rounded-md bg-white flex flex-col gap-5 w-[200px] sm:w-[300px] mx-auto">
-        <input type="number" placeholder="Enter number" class="focus:outline-none border-b-2 border-neutral-600 text-center">
+        <div class="flex flex-col">
+            <input type="number" placeholder="Enter number 100 - 100000" class="focus:outline-none border-b-2 border-neutral-600 text-center">
+            <p class="error hidden text-center text-sm text-red-600"></p>
+        </div>
         <button class="bg-green-500 rounded-sm py-1">Check Prime</button>
     </div>
     <script src="script.js"></script>

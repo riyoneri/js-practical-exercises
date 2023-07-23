@@ -1,15 +1,22 @@
 const number = document.querySelector('[type="number"]');
 const btn = document.querySelector("button");
+const errorSpan = document.querySelector(".error");
 
-const changeBtn = (checker) => {
-  btn.textContent = checker ? "It's circular prime" : "It's not circular prime";
-  btn.disabled = true;
+const handleOutput = (checker, msg) => {
+  // btn.textContent = checker ? "It's circular prime" : "It's not circular prime";
+  // btn.disabled = true;
 
-  const timer = setTimeout(() => {
-    btn.textContent = "Check Prime";
-    btn.disabled = false;
-    clearTimeout(timer);
-  }, 3000);
+  // const timer = setTimeout(() => {
+  //   btn.textContent = "Check Prime";
+  //   btn.disabled = false;
+  //   clearTimeout(timer);
+  // }, 3000);
+
+  errorSpan.classList.remove("hidden");
+  errorSpan.textContent = msg;
+  if (checker) {
+    errorSpan.classList.replace("text-red-600", "text-green-500");
+  }
 };
 
 const checkPrime = (num) => {
@@ -33,32 +40,45 @@ const checkEquality = (num1, num2) => {
   return true;
 };
 
+console.log(JSON.stringify([1, 4]) == JSON.stringify([1, 4]));
+
+number.addEventListener("input", () => {
+  errorSpan.classList.add("hidden");
+  event.target.classList.add("border-neutral-600");
+  event.target.classList.remove("border-red-600");
+  event.target.classList.remove("text-green-500");
+});
+
 btn.addEventListener("click", () => {
   const inputValue = number.value;
+
   if (inputValue.length === 0) {
     number.classList.remove("border-neutral-600");
     return number.classList.add("border-red-600");
   }
 
-  number.classList.add("border-neutral-600");
-  number.classList.remove("border-red-600");
-
-  if (+inputValue <= 9) {
-    return changeBtn(["2", "3", "5", "7"].includes(inputValue));
+  if (+inputValue < 100 || +inputValue > 100000) {
+    return handleOutput(false, "Number out of range!");
   }
 
-  if (!checkPrime(inputValue)) return changeBtn(false);
+  let returnArr = [];
 
-  const min = Math.pow(10, inputValue.length - 1);
-  const max = Math.pow(10, inputValue.length) - 1;
+  let counter = 0;
+  for (let i = 10; i < +inputValue; i++) {
+    let numStr = i + "";
+    const min = Math.pow(10, numStr.length - 1);
+    const max = Math.pow(10, numStr.length) - 1;
 
-  let available = false;
-  for (let i = min; i <= max; i++) {
-    if (checkPrime(i) && checkEquality(inputValue, i) && i != inputValue) {
-      available = true;
-      break;
+    for (let j = min; j <= max; j++) {
+      if (checkPrime(j) && checkEquality(numStr, j) && j != i) {
+        if (
+          returnArr.find((elt) => JSON.stringify(elt) != JSON.stringify([i, j]))
+        )
+          returnArr.push([i, j]);
+      }
     }
   }
+  console.log(returnArr)
 
-  changeBtn(available);
+  handleOutput(true, `Number of circular primes: ${counter}`);
 });
