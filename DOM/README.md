@@ -5,3 +5,4 @@ These are exercises related to JS DOM studies
 1. Todo App
 2. Simple countdown
 3. Circular Primes
+4. Form Validation
