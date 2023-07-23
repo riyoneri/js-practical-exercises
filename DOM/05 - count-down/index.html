@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Count Down</title>
+</head>
+
+<body class="h-screen bg-neutral-800 flex px-5 items-center justify-center">
+    <section class="flex flex-col gap-5 text-md sm:text-2xl py-5 w-full sm:w-auto bg-white text-black">
+        <div class="flex items-center justify-center gap-2">
+            <input type="number" name="hour" value="0" placeholder="hours" class="w-full focus:outline-none py-1 text-center"
+                id="">
+            <span>:</span>
+            <input type="number" name="minute" value="0" placeholder="minutes" class="w-full focus:outline-none py-1 text-center"
+                id="">
+            <span>:</span>
+            <input type="number" name="second" value="0" placeholder="seconds" class="w-full focus:outline-none py-1 text-center"
+                id="">
+        </div>
+        <hr class="border-neutral-400">
+        <div class="flex flex-col items-center text-sm sm:text-base">
+            <span class="hidden msg"></span>
+            <button class="bg-green-900 text-white rounded-full px-5 py-2 mt-5">Start Countdown</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
