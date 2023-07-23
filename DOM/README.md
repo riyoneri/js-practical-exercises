@@ -6,4 +6,5 @@ These are exercises related to JS DOM studies
 2. Simple countdown
 3. Circular Primes
 4. Form Validation
-6. Count Down
+5. Count Down
+    - Dynamic List Background Color
