@@ -8,3 +8,4 @@ These are exercises related to JS DOM studies
 4. Form Validation
 5. Count Down
     - Dynamic List Background Color
+6. Place the ball in the field
