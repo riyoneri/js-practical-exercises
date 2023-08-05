@@ -1,1 +1,1 @@
-These are javascript exercises which comprises Fundamentals and DOM.
+These are javascript exercises which comprises Fundamentals, ES6 and DOM.
