@@ -22,6 +22,10 @@ class Position {
   }
 }
 
+class ProgramWindow {
+    
+}
+
 const size = new Size(1);
 const point = new Position();
 console.log(point.x, point.y);
